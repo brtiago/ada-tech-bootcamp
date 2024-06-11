@@ -1,6 +1,6 @@
 package Supermarket.implementation;
 
-public class SupermarketArray implements Supermarket.implementation.Supermarket {
+public class SupermarketArray implements Supermarket {
 
     private final String[] items;
     private  int lastIndex;
