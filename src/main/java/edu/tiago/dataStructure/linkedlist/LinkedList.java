@@ -93,14 +93,55 @@ public class LinkedList {
         return temp;
     }
 
+    public void prepend(String data) {
+        Node newNode = new Node(data);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
+    }
+
+    public Node removeFirst(){
+        if (length == 0) return null;
+        Node temp = head;
+        head = head.next;
+        temp.next= null;
+        length--;
+        if (length == 0) {
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
+
+    public Node get(int index) {
+        if (index < 0 || index >= length) return null;
+        Node temp = head;
+        for (int i = 0; i < index ; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList("Elemento 1");
         list.append("elemento 2");
         list.append("elemento 3");
+        list.prepend("elemento 0");
+
+        System.out.println(list.get(2).data);
+
+        // System.out.println(list.removeFirst().data);
+        // list.print();
+
         // list.getHead();
         // list.getTail();
         // list.getLength();
-        list.print();
+        //list.print();
     }
 
 }
