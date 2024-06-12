@@ -72,11 +72,35 @@ public class LinkedList {
         length++;
     }
 
+    public Node removeLast() {
+        if (length  == 0) return null;
+        Node pre = head;
+        Node temp = null;
+
+        while(pre.next != tail) {
+            pre = pre.next;
+        }
+
+        temp = tail;
+        tail = pre;
+        tail.next = null;
+
+        length--;
+        if (length == 0) {
+            head =  null;
+            tail = null;
+        }
+        return temp;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList("Elemento 1");
-        list.getHead();
-        list.getTail();
-        list.getLength();
+        list.append("elemento 2");
+        list.append("elemento 3");
+        // list.getHead();
+        // list.getTail();
+        // list.getLength();
+        list.print();
     }
 
 }
