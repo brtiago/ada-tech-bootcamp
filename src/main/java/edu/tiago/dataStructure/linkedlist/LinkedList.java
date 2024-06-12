@@ -146,6 +146,15 @@ public class LinkedList {
         return true;
     }
 
+    public  boolean set(int index, String data) {
+        Node temp = get(index);
+        if (temp != null) {
+            temp.data = data;
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList("Elemento 1");
         list.append("elemento 2");
@@ -161,6 +170,9 @@ public class LinkedList {
         // list.getHead();
         // list.getTail();
         // list.getLength();
+        //list.print();
+
+        list.set(2,  "elementp 5");
         list.print();
     }
 
