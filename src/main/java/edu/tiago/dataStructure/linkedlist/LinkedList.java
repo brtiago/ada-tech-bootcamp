@@ -127,13 +127,33 @@ public class LinkedList {
         return temp;
     }
 
+    public boolean insert(int index, String data) {
+        if (index < 0 || index >= length) return false;
+        if (index == 0){
+            prepend(data);
+            return true;
+        }
+        if (index == length) {
+            append(data);
+            return true;
+        }
+
+        Node newNode = new Node(data);
+        Node temp = get(index - 1);
+        newNode.next = temp.next;
+        temp.next = newNode;
+        length++;
+        return true;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList("Elemento 1");
         list.append("elemento 2");
         list.append("elemento 3");
         list.prepend("elemento 0");
 
-        System.out.println(list.get(2).data);
+        list.insert(2, "elemento 2.5");
+        // System.out.println(list.get(2).data);
 
         // System.out.println(list.removeFirst().data);
         // list.print();
@@ -141,7 +161,7 @@ public class LinkedList {
         // list.getHead();
         // list.getTail();
         // list.getLength();
-        //list.print();
+        list.print();
     }
 
 }
