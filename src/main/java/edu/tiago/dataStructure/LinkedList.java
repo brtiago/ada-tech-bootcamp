@@ -1,4 +1,4 @@
-package edu.tiago.dataStructure.linkedlist;
+package edu.tiago.dataStructure;
 
 public class LinkedList {
 

@@ -1,4 +1,4 @@
-package edu.tiago.dataStructure.stack;
+package edu.tiago.dataStructure;
 
 public class Stack {
 

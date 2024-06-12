@@ -1,6 +1,4 @@
-package edu.tiago.dataStructure.main;
-
-import edu.tiago.dataStructure.stack.Stack;
+package edu.tiago.dataStructure;
 
 public class Main {
 
