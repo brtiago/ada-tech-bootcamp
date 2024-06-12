@@ -60,6 +60,18 @@ public class LinkedList {
         }
     }
 
+    public void append(String data) {
+        Node newNode = new Node(data);
+        if(length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList("Elemento 1");
         list.getHead();
