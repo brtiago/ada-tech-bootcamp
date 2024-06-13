@@ -10,3 +10,4 @@ Repositório com os materiais de estudo do bootcamp Santander | Coders 2024 da p
 * [Queue](src/main/java/edu/tiago/dataStructure/Queue.java) - Implementação de fila
 * [FilaDeAtendimento](src/main/java/edu/tiago/dataStructure/FilaDeAtendimento.java) - Problema: Simulador de fila de atendimento
 * [Tree](src/main/java/edu/tiago/dataStructure/Tree.java) - Implementação de uma árvore
+* [BST](src/main/java/edu/tiago/dataStructure/BST.java) - Implementação de árvore binária de busca
