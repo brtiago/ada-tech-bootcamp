@@ -28,6 +28,6 @@ Dado um inteiro k e uma fila de inteiros, a tarefa é inverter a ordem dos prime
 da fila, deixando os demais elementos na mesma ordem relativa.
 
 Exemplo 1: [1, 2, 3, 4, 5] -> K = 2 -> [2, 1, 3, 4, 5]
-Exemplo 2: [1, 2, 3, 4, 5] -> K = 2 -> [4, 3, 2, 1, 5]
+Exemplo 2: [1, 2, 3, 4, 5] -> K = 4 -> [4, 3, 2, 1, 5]
 ```
 * Maior valor em cada nível da árvore binária
