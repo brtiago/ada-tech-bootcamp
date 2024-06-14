@@ -32,9 +32,26 @@ Exemplo 2: [1, 2, 3, 4, 5] -> K = 4 -> [4, 3, 2, 1, 5]
 ```
 * [Maior valor em cada nível da árvore binária](src/main/java/edu/tiago/dataStructure/problemas/LargestTreeValues.java)
 ```bash
-Dada uma árvore binária, encontre o maior valor em cada nível.
+Dada uma árvore binária, encontre o maior valor em cada nível conforme o gráfico abaixo
 
 Exemplo lista: [100, 10, 5, 6, 1, 7, 5]
 A resposta deve ser: [100, 10, 7]
 
+```
+```mermaid
+graph TD
+A[100]
+B[10]
+C[5]
+D[6]
+E[1]
+F[7]
+G[5]
+
+    A --> B
+    A --> C
+    B --> D
+    B --> E
+    C --> F
+    C --> G
 ```
