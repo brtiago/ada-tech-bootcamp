@@ -31,3 +31,9 @@ Exemplo 1: [1, 2, 3, 4, 5] -> K = 2 -> [2, 1, 3, 4, 5]
 Exemplo 2: [1, 2, 3, 4, 5] -> K = 4 -> [4, 3, 2, 1, 5]
 ```
 * Maior valor em cada nível da árvore binária
+```bash
+Dada uma árvore binária, encontre o maior valor em cada nível.
+
+Exemplo lista: [37, 11, 66, 08, 17]
+
+```
