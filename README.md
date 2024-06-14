@@ -22,7 +22,7 @@ Exemplo 1: 2*(3+4+5*[2+3)]
 Exemplo 2: 2*(3+4+5*[2+3])
 Exemplo 3: [2*(3+4+5[2+3]/(2+(3+(7+5)*9)*6)*[5+8]+17)+2]
 ```
-* [Revertendo os primeiros elementos de uma fila](src/main/java/edu/tiago/dataStructure/problemas/BalanceamentoDeColchetes.java)
+* [Revertendo os primeiros elementos de uma fila](src/main/java/edu/tiago/dataStructure/problemas/FilaReversa.java)
 ```bash
 Dado um inteiro k e uma fila de inteiros, a tarefa é inverter a ordem dos primeiros k elementos 
 da fila, deixando os demais elementos na mesma ordem relativa.
